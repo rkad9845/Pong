@@ -109,11 +109,10 @@ function update() {
         resetGame(-1);
     }
 
-// score display with LED-style font
-    context.fillStyle = "lime"; // LED color
-    context.font = "bold 45px 'Courier New', monospace"; // LED-style font
-    context.fillText(player1Score, boardWidth / 5, 45);
-    context.fillText(player2Score, boardWidth * 4 / 5 - 45, 45);
+    // score display with Atari Pong font style
+    context.font = "30px 'Press Start 2P', cursive";
+    context.fillText(player1Score, boardWidth / 5 - 15, 40);
+    context.fillText(player2Score, boardWidth * 4 / 5 - 30, 40);
 
     // draw dotted line down the middle
     for (let i = 10; i < board.height; i += 25) {
