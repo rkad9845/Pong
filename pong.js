@@ -109,8 +109,9 @@ function update() {
         resetGame(-1);
     }
 
-    // score display
-    context.font = "45px sans-serif";
+    // score display with LED-style font
+    context.fillStyle = "lime"; // LED color
+    context.font = "bold 45px 'Courier New', monospace"; // LED-style font
     context.fillText(player1Score, boardWidth / 5, 45);
     context.fillText(player2Score, boardWidth * 4 / 5 - 45, 45);
 
