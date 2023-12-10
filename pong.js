@@ -125,9 +125,9 @@ function outOfBounds(yPosition) {
 }
 
 function movePlayer(e) {
-    if (e.code == "ArrowUp") {
+    if (e.code == "KeyW") {
         player1.velocityY = -3;
-    } else if (e.code == "ArrowDown") {
+    } else if (e.code == "KeyS") {
         player1.velocityY = 3;
     }
 }
